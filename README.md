@@ -1,4 +1,4 @@
-# PROJECTNAME
+# Hacker101-CTFs
 
 ## Objective
 
