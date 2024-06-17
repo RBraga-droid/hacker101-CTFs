@@ -24,10 +24,19 @@ This project is the gathering of notes from my CTFs training on [hacker101](http
 Skills: Web
 
 Completion: 100%
+
 ### CTF-2:"Micro-CMS v1"
+
+[link](CTF-2)
+
+Skills: Web
+
+Completion: 100%
+
+### CTF-2:"Micro-CMS v2"
 
 [link]()
 
 Skills: Web
 
-Completion: 100%
+Completion: 0%
