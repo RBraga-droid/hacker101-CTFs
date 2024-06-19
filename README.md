@@ -40,3 +40,11 @@ Completion: 100%
 Skills: Web
 
 Completion: 100%
+
+### CTF-4:"Encrypted pastebin"
+
+[link](CTF-4)
+
+Skills: Web, Crypto
+
+Completion: 0%
