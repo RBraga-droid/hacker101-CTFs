@@ -32,7 +32,7 @@ What we can understand at this point is also that there is a function while deco
 
 We can try the padding oracle attack wehere we use the fact that the padding of the message made to match the dimension of a block can be used against the encryption mechanism itself. We basicaly know how a padding word is encrypted and we can leverage this. Morover, we have a message that says "Invalid padding" that works as a oracle, telling us if the padding is good or not. To leverage this vulnerability we try to use [PadBuster](https://github.com/AonCyberLabs/PadBuster) an automated tool that can take a link to a page and try to apply padding oracle attack automatically. All we needed was a command like:
 
-`./padBuster.pl https://24ca3ce1f2575b422afcab5d1936cc01.ctf.hacker101.com/?post=hOYVv/NRC7sPBv4KTz14FCiTq/XDWUK2rTnKwILmprn9pUE48Mj/7a359faz2VD+3t4QgEYGPJFszqiS0FhvFa6jzdwbtTL2fe/aQpGLc3OK0amlS4UoyEf/RAiJPW7DiqebWNMy4xwT6ZIsZUX6suQDlILqxTRISDVWxBdpttLVSnSiQJ8qdXW44fu5nd1XGBPeVAJKG0tlRgCsh0ALxQ== hOYVv/NRC7sPBv4KTz14FCiTq/XDWUK2rTnKwILmprn9pUE48Mj/7a359faz2VD+3t4QgEYGPJFszqiS0FhvFa6jzdwbtTL2fe/aQpGLc3OK0amlS4UoyEf/RAiJPW7DiqebWNMy4xwT6ZIsZUX6suQDlILqxTRISDVWxBdpttLVSnSiQJ8qdXW44fu5nd1XGBPeVAJKG0tlRgCsh0ALxQ== 16 -encoding 0`
+`./padBuster.rl https://99ab65737b8707f999ca6c871c1d478b.ctf.hacker101.com/?post=g+nb8y8mLZ6zSepuo0SBK81gmjyX7OyYTf5OxHn0NMVji8rlLmSKw3K+2W1n4NpMlGDlQsMl7mRl4oBZrPW1Vkxjm2SPLvdo+Hdl2NuOgFis9d0lx+A7PwhwRcY5VHxkJw5owSoGz4IbbxVope3OA4ijmj7ZmkVotzc+jctoPYznt2BCcvG9o+c4OgPmkc84AR79e4INmp5+tJ4lcsLRyQ== g+nb8y8mLZ6zSepuo0SBK81gmjyX7OyYTf5OxHn0NMVji8rlLmSKw3K+2W1n4NpMlGDlQsMl7mRl4oBZrPW1Vkxjm2SPLvdo+Hdl2NuOgFis9d0lx+A7PwhwRcY5VHxkJw5owSoGz4IbbxVope3OA4ijmj7ZmkVotzc+jctoPYznt2BCcvG9o+c4OgPmkc84AR79e4INmp5+tJ4lcsLRyQ==`
 
 Buildt by applying sostitution to a post request we catched using burp suite. 
 
@@ -45,9 +45,5 @@ The steps for a padding oracle attack are:
 
 Our idea is that if we can understand the encryption key we can force the decription mechanism to apply malicious actions on the web page that decrypts the message. By skipping the translation form for example we can insert speial charaters such as `'` to perform SQLi, or even some tags and script that would be otherwise sanitized. We could also tweak the indexing system and probably access various protected pages. 
 
-`https://99ab65737b8707f999ca6c871c1d478b.ctf.hacker101.com/?post=g+nb8y8mLZ6zSepuo0SBK81gmjyX7OyYTf5OxHn0NMVji8rlLmSKw3K+2W1n4NpMlGDlQsMl7mRl4oBZrPW1Vkxjm2SPLvdo+Hdl2NuOgFis9d0lx+A7PwhwRcY5VHxkJw5owSoGz4IbbxVope3OA4ijmj7ZmkVotzc+jctoPYznt2BCcvG9o+c4OgPmkc84AR79e4INmp5+tJ4lcsLRyQ== g+nb8y8mLZ6zSepuo0SBK81gmjyX7OyYTf5OxHn0NMVji8rlLmSKw3K+2W1n4NpMlGDlQsMl7mRl4oBZrPW1Vkxjm2SPLvdo+Hdl2NuOgFis9d0lx+A7PwhwRcY5VHxkJw5owSoGz4IbbxVope3OA4ijmj7ZmkVotzc+jctoPYznt2BCcvG9o+c4OgPmkc84AR79e4INmp5+tJ4lcsLRyQ==`
+After processing the breaking mechanism we receive the informations about the plaintext, as well as the flag 503c3888b834985c031fce375fb24ecb0d69a7cf92c8a77d1974d8bc6c61e0de
 
-FLAG:
-
-503c3888b834985c
-031fce375fb24ecb
