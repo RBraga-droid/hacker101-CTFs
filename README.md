@@ -47,4 +47,4 @@ Completion: 100%
 
 Skills: Web, Crypto
 
-Completion: 25%
+Completion: 50%
