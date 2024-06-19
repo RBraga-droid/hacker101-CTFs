@@ -45,5 +45,10 @@ The steps for a padding oracle attack are:
 
 Our idea is that if we can understand the encryption key we can force the decription mechanism to apply malicious actions on the web page that decrypts the message. By skipping the translation form for example we can insert speial charaters such as `'` to perform SQLi, or even some tags and script that would be otherwise sanitized. We could also tweak the indexing system and probably access various protected pages. 
 
-After processing the breaking mechanism we receive the informations about the plaintext, as well as the flag 503c3888b834985c031fce375fb24ecb0d69a7cf92c8a77d1974d8bc6c61e0de
+![image](https://github.com/RBraga-droid/hacker101-CTFs/assets/62329743/5f0ceb45-5085-45e4-85cd-120a6812ec73)
+
+After processing the breaking mechanism we receive the informations about the plaintext, as well as the flag 503c3888b834985c031fce375fb24ecb0d69a7cf92c8a77d1974d8bc6c61e0de .
+
+We signal this as the bug at the base of various problems that an attacker could develop, some of them will be showed in the following section. We sugest the implementation of a security system that gives no clue about the padding of the message so that no oracle attack can be performed. Oracle attacks are the only way of breaking the AES cypher algorithm so there should be 100% security about them. 
+
 
