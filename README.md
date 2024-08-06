@@ -13,7 +13,7 @@ This project is the gathering of notes from my CTFs training on [hacker101](http
 
 ### Tools Used
 
-- [Burp-suite](https://portswigger.net/burp) by port swigger.
+- [Burp-suite](https://portswigger.net/burp) by port swigger. <img src="https://img.shields.io/badge/-Burp%20Suite-183A61?style=for-the-badge&logo=BurpSuite&logoColor=white" />
 
 ## CTF-challenges
 
