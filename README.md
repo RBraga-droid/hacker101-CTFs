@@ -17,41 +17,10 @@ This project is the gathering of notes from my CTFs training on [hacker101](http
 
 ## CTF-challenges
 
-### CTF-1:"A little something to get you started"
-
-[link](CTF-1)
-
-Skills: Web
-
-Completion: 100%
-
-### CTF-2:"Micro-CMS v1"
-
-[link](CTF-2)
-
-Skills: Web
-
-Completion: 100%
-
-### CTF-3:"Micro-CMS v2"
-
-[link](CTF-3)
-
-Skills: Web
-
-Completion: 100%
-
-### CTF-4:"Encrypted pastebin"
-
-[link](CTF-4)
-
-Skills: Web, Crypto
-
-Completion: 50%
-
-### CTF-5:"Photo gallery"
-[link](CTF-5)
-
-Skills: Web
-
-Completion: 100%
+| Title  | Skills | Completion | Link |
+| ------------- | ------------- | ------------- | ------------- |
+| CTF-1:"A little something to get you started"  | [link](CTF-1)  | Web | 100% |
+| CTF-2:"Micro-CMS v1"  | [link](CTF-2)  | Web | 100% |
+| CTF-3:"Micro-CMS v2"  | [link](CTF-3)  | Web | 100% |
+| CTF-4:"Encrypted pastebin"  | [link](CTF-4)  | Web, Crypto | 50% |
+| CTF-5:"Photo gallery"  | [link](CTF-5)  | Web | 100% |
